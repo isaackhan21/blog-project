@@ -1,25 +1,26 @@
 import Link from "next/link";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="container flex justify-center mx-auto">
-      <header>
+    <div className="container  flex flex-col justify-center mx-auto">
+      <header className="  flex flex-col justify-around items-center mt-8 ">
         <Link href="/">
           <a>
-            <div className="ml-12 mt-8">
+            <div className="">
               <h1 className="text-7xl  font-bold">Web Dev Fanatic</h1>
-              <h2 className="text-4xl mt-4 font-semibold">
-                My Personal Web Dev Blog
-              </h2>
             </div>
+            <h3 className="text-4xl ml-2 mt-4 text-center  text-blue-500">
+              My Personal Web Dev Blog
+            </h3>
           </a>
         </Link>
+        <NavBar />
       </header>
 
-      <div className="">{children}</div>
-      <footer>
-        <p>Copyright 2021 Web Dev Fanatic</p>
-      </footer>
+      <div className=" py-60 flex justify-center">{children}</div>
+      <Footer />
     </div>
   );
 }
