@@ -4,8 +4,8 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="container  flex flex-col justify-center mx-auto">
-      <header className="  flex flex-col justify-around items-center mt-8 ">
+    <div className="container flex flex-col justify-center mx-auto">
+      <header className="  flex flex-col items-center mt-14 ">
         <Link href="/">
           <a>
             <div className="">
@@ -19,7 +19,7 @@ export default function Layout({ children }) {
         <NavBar />
       </header>
 
-      <div className=" py-60 flex justify-center">{children}</div>
+      <div className=" py-28 flex justify-center">{children}</div>
       <Footer />
     </div>
   );

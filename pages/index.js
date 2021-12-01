@@ -21,9 +21,14 @@ export default function Home({ blogPosts }) {
   console.log(blogPosts);
   return (
     <div className="">
-      {blogPosts.map((post) => (
-        <PostCard key={post.sys.id} post={post} />
-      ))}
+      <div className="ml-4">
+        <h1 className="text-5xl font-bold">Latest Posts</h1>
+      </div>
+      <div className="mt-12 grid grid-cols-3 gap-20">
+        {blogPosts.map((post) => (
+          <PostCard key={post.sys.id} post={post} />
+        ))}
+      </div>
     </div>
   );
 }

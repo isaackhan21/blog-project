@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function PostCard({ post }) {
   const { title, slug, datePublished, thumbnail } = post.fields;
   return (
-    <div>
+    <div className=" shadow-2xl border-gray-200 rounded-lg py-20">
       <div>
         <Image
           src={"https:" + thumbnail.fields.file.url}
@@ -14,6 +14,7 @@ export default function PostCard({ post }) {
       </div>
       <div>
         <div>
+          <h3>{datePublished}</h3>
           <h4>{title}</h4>
           <p>edfwd</p>
         </div>
