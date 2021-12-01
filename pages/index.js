@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { createClient } from "contentful";
+import PostCard from "../components/PostCard";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -18,5 +19,11 @@ export async function getStaticProps() {
 
 export default function Home({ blogPosts }) {
   console.log(blogPosts);
-  return <div className="">Blog Post List</div>;
+  return (
+    <div className="">
+      {blogPosts.map((post) => (
+        <PostCard key={post.sys.id} post={post} />
+      ))}
+    </div>
+  );
 }
