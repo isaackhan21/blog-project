@@ -25,7 +25,7 @@ export default function PostCard({ post }) {
             </h3>
           </div>
           <div className="flex p-3 rounded-xl bg-blue-200 ">
-            <Link href={"./blog-posts" + slug}>
+            <Link href={"./blog-posts/" + slug}>
               <a>Read More</a>
             </Link>
           </div>
