@@ -1,4 +1,7 @@
 import { createClient } from "contentful";
+import Image from "next/image";
+import moment from "moment";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -34,6 +37,21 @@ export async function getStaticProps({ params }) {
 }
 
 export default function PostDetails({ blogPost }) {
-  console.log(blogPost);
-  return <div>Post Details</div>;
+  const { featuredImage, title, datePublished, content } = blogPost.fields;
+  return (
+    <div>
+      <div>
+        <Image
+          src={"https:" + featuredImage.fields.file.url}
+          width={featuredImage.fields.file.details.image.width}
+          height={featuredImage.fields.file.details.image.height}
+        />
+        <h2>{title}</h2>
+        <div>
+          <p>Published: {moment(datePublished).format("MMMM Do YYYY")}</p>
+        </div>
+        <div>{documentToReactComponents(content)}</div>
+      </div>
+    </div>
+  );
 }
