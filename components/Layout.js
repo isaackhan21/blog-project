@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="container flex flex-col justify-center mx-auto">
+    <div className="container bg-gray-100 flex flex-col justify-center mx-auto">
       <header className="flex flex-col items-center mt-14 ">
         <Link href="/">
           <a>

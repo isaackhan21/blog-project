@@ -5,7 +5,7 @@ import moment from "moment";
 export default function PostCard({ post }) {
   const { title, slug, datePublished, thumbnail } = post.fields;
   return (
-    <div className="shadow-lg border-gray-200 rounded-3xl py-20  ">
+    <div className=" shadow-xl  rounded-3xl py-20  ">
       <div>
         <Image
           src={"https:" + thumbnail.fields.file.url}

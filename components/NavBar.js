@@ -9,17 +9,22 @@ export default function NavBar() {
         </li>
         <li className="mx-8">
           <a className="hover:text-gray-700" href="/about">
-            About
+            Blog
           </a>
         </li>
         <li className="mx-8">
           <a className="hover:text-gray-700" href="/contact">
-            Contact
+            Dashboard
           </a>
         </li>
         <li className="mx-8">
           <a className="hover:text-gray-700" href="/contact">
             Portfolio
+          </a>
+        </li>
+        <li className="mx-8">
+          <a className="hover:text-gray-700" href="/contact">
+            Snippets
           </a>
         </li>
       </ul>
