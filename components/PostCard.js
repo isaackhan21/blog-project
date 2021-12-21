@@ -35,18 +35,18 @@ export default function PostCard({ post }) {
     //     </div>
     //   </div>
     // </div>
-    <a class="block overflow-hidden shadow-xl rounded-3xl" href="">
+    <a class="  block overflow-hidden shadow-xl rounded-3xl" href="">
       <Image
         src={"https:" + thumbnail.fields.file.url}
-        width={450}
-        height={300}
+        width={550}
+        height={400}
         className="rounded-2xl"
       />
 
-      <div class="relative w-full p-6 -mt-8 bg-white rounded-3xl">
-        <h5 class="text-xl font-bold text-gray-900">{title}</h5>
+      <div class="  relative w-full p-6 -mt-8 bg-white dark:bg-gray-800 rounded-3xl">
+        <h5 class="text-xl font-bold text-gray-900 dark:text-white">{title}</h5>
 
-        <p class="hidden mt-2 text-gray-500 sm:block">
+        <p class="hidden mt-2 text-gray-500 dark:text-white sm:block">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
           commodi eligendi officiis laboriosam autem eveniet.
         </p>
@@ -54,7 +54,7 @@ export default function PostCard({ post }) {
         <dl class="items-center mt-6 sm:flex">
           <div class="flex items-center">
             <span class="flex ml-3 space-x-1 space-x-reverse text-sm font-medium text-gray-600 ">
-              <h3 className="text-gray-500 mt-2">
+              <h3 className="text-gray-500 dark:text-white mt-2">
                 Published: {moment(datePublished).format("MMMM Do YYYY")}
               </h3>
             </span>

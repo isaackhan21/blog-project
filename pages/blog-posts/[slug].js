@@ -68,25 +68,28 @@ export default function PostDetails({ blogPost }) {
     //     <div className="text-xl">{documentToReactComponents(content)}</div>
     //   </div>
     // </div>
-    <article className="bg-red-200 px-32">
+    <article className="">
       <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class=" bg-blue-200 mx-auto space-y-8 max-w-prose">
-          <h1 class="text-3xl  font-bold leading-tight text-gray-900 sm:text-5xl">
+        <div class="  mx-auto space-y-8 max-w-screen-md">
+          <h1 class="text-3xl pb-8  font-bold leading-tight text-gray-900 sm:text-5xl dark:text-white">
             {title}
           </h1>
           <div class="aspect-w-16 aspect-h-9">
-            <img
-              class="object-cover rounded-xl"
-              src="https://www.hyperui.dev/photos/man-2.jpeg"
-              alt=""
+            <Image
+              src={"https:" + featuredImage.fields.file.url}
+              width={650}
+              height={500}
+              className="object-cover rounded-xl"
             />
           </div>
 
-          <div class="inline-block pb-8 border-b-2 border-blue-500">
-            <p class="font-medium text-gray-600">By Alex Trimoboli</p>
+          <div class="inline-block pb-8 border-b-2 border-gray-200">
+            <h3 className="text-gray-500 dark:text-white mt-2">
+              Published: {moment(datePublished).format("MMMM Do YYYY")}
+            </h3>
           </div>
 
-          <div class="prose prose-lg max-w-none">
+          <div class=" dark:text-white prose prose-lg max-w-none">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
               laboriosam quia veritatis ullam, excepturi deserunt ex vero nemo

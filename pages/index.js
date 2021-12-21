@@ -23,7 +23,7 @@ export default function Home({ blogPosts }) {
   return (
     <div className="">
       <div className="ml-4">
-        <h1 className="text-4xl font-bold">All Posts</h1>
+        <h1 className=" dark: text-white text-4xl font-bold">All Posts</h1>
       </div>
       <div className=" mt-12 grid grid-cols-3 gap-20">
         {blogPosts.map((post) => (

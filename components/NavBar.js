@@ -1,9 +1,11 @@
+import Toggle from "./Toggle";
+
 export default function NavBar() {
   return (
     <nav className="flex items-center  ">
-      <ul className=" flex mx-auto mt-2 px-20 text-gray-700   text-lg">
+      <ul className=" flex mx-auto mt-2 px-20 text-gray-700 dark:text-white   text-lg">
         <li className="mx-8">
-          <a className="hover:text-gray-700" href="/">
+          <a className="" href="/">
             Blog
           </a>
         </li>
@@ -23,6 +25,7 @@ export default function NavBar() {
           </a>
         </li>
       </ul>
+      <Toggle />
     </nav>
   );
 }
