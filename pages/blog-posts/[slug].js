@@ -50,24 +50,6 @@ export default function PostDetails({ blogPost }) {
   if (!blogPost) return <div>Loading...</div>;
   const { featuredImage, title, datePublished, content } = blogPost.fields;
   return (
-    // <div className="  max-w-6xl  py-14 flex flex-col items-center">
-    //   <div className="">
-    //     <div className="flex flex-col items-center">
-    //       <Image
-    //         src={"https:" + featuredImage.fields.file.url}
-    //         width={650}
-    //         height={500}
-    //       />
-    //       <div className=" text-4xl font-bold pt-24">
-    //         <h1>{title}</h1>
-    //       </div>
-    //     </div>
-    //     <div className="pt-20 text-xl">
-    //       <p>Published: {moment(datePublished).format("MMMM Do YYYY")}</p>
-    //     </div>
-    //     <div className="text-xl">{documentToReactComponents(content)}</div>
-    //   </div>
-    // </div>
     <article className="">
       <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div class="  mx-auto space-y-8 max-w-screen-md">

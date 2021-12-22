@@ -5,36 +5,6 @@ import moment from "moment";
 export default function PostCard({ post }) {
   const { title, slug, datePublished, thumbnail } = post.fields;
   return (
-    // <div className=" shadow-lg border border-gray-100 flex flex-col justify-between  rounded-3xl pt-12 ">
-    //   <div>
-    //     <Image
-    //       src={"https:" + thumbnail.fields.file.url}
-    //       width={450}
-    //       height={300}
-    //       className="rounded-2xl"
-    //     />
-    //   </div>
-    //   <div className=" py-4 flex flex-col justify-between ">
-    //     <div className="flex flex-col">
-    //       <h4 className=" mt-4 text-2xl font-bold text-center">{title}</h4>
-    //       <p className="  py-10  mt-8 flex justify-center text-gray-500">
-    //         edfwd
-    //       </p>
-    //     </div>
-    //     <div className="  py-4 flex justify-around items-center">
-    //       <div className=" py-4 flex items-center">
-    //         <h3 className="text-gray-500 mt-2">
-    //           Published: {moment(datePublished).format("MMMM Do YYYY")}
-    //         </h3>
-    //       </div>
-    //       <div className="flex px-5 py-3 rounded-xl bg-gradient-to-r from-blue-400 to-emerald-400">
-    //         <Link href={"./blog-posts/" + slug}>
-    //           <a>Read More</a>
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <a class="  block overflow-hidden shadow-xl rounded-3xl" href="">
       <Image
         src={"https:" + thumbnail.fields.file.url}

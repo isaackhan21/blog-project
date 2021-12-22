@@ -14,9 +14,6 @@ export default function Layout({ children }) {
                   Web Dev Fanatic
                 </h1>
               </div>
-              {/* <h3 className="text-4xl ml-2 mt-4 text-center  text-blue-500">
-              My Personal Web Dev Blog
-            </h3> */}
             </a>
           </Link>
           <NavBar />
