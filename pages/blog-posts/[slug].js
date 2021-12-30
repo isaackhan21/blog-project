@@ -51,7 +51,7 @@ export default function PostDetails({ blogPost }) {
   const { featuredImage, title, datePublished, content } = blogPost.fields;
   return (
     <article className="">
-      <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="max-w-screen-xl px-4 md:py-16 sm:px-6 lg:px-8">
         <div class="  mx-auto space-y-8 max-w-screen-md">
           <h1 class="text-3xl pb-8  font-bold leading-tight text-gray-900 sm:text-5xl dark:text-white">
             {title}

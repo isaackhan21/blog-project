@@ -4,19 +4,23 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="container flex flex-col justify-center mx-auto">
-      <div className="dark:bg-gray-900">
-        <header className="flex py-4   justify-items-start justify-between items-center border-b  ">
+    <div className="container  flex flex-col mx-auto  ">
+      <div className="dark:bg-gray-900 ">
+        <header className=" flex flex-col md:flex-row py-3  justify-between items-center border-b ">
           <Link href="/">
-            <a>
-              <div className="">
-                <h1 className="ml-6 text-4xl dark:text-white font-bold">
-                  Web Dev Fanatic
-                </h1>
-              </div>
-            </a>
+            <div className="flex justify-center mt-2 md:mt-0">
+              <a>
+                <div className=" ">
+                  <h1 className="text-3xl md:text-2xl lg:ml-6 xl:text-3xl  dark:text-white font-bold">
+                    Web Dev Fanatic
+                  </h1>
+                </div>
+              </a>
+            </div>
           </Link>
-          <NavBar />
+          <div className="flex justify-center">
+            <NavBar />
+          </div>
         </header>
 
         <div className=" py-28 flex justify-center">{children}</div>

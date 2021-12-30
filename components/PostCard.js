@@ -5,7 +5,10 @@ import moment from "moment";
 export default function PostCard({ post }) {
   const { title, slug, datePublished, thumbnail } = post.fields;
   return (
-    <a class="  block overflow-hidden shadow-xl rounded-3xl" href="">
+    <div
+      class="mb-12 md:mb-24 lg:mb-14 2xl:mb-0 w-10/12 md:w-7/12 lg:w-10/12 xl:w-9/12  2xl:w-full   block overflow-hidden shadow-xl rounded-3xl"
+      href=""
+    >
       <Image
         src={"https:" + thumbnail.fields.file.url}
         width={550}
@@ -13,8 +16,10 @@ export default function PostCard({ post }) {
         className="rounded-2xl"
       />
 
-      <div class="  relative w-full p-6 -mt-8 bg-white dark:bg-gray-800 rounded-3xl">
-        <h5 class="text-xl font-bold text-gray-900 dark:text-white">{title}</h5>
+      <div class=" relative w-full p-6 -mt-8 bg-white dark:bg-gray-800 rounded-3xl">
+        <h5 class=" text-xl font-bold text-gray-900 dark:text-white">
+          {title}
+        </h5>
 
         <p class="hidden mt-2 text-gray-500 dark:text-white sm:block">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
@@ -24,7 +29,7 @@ export default function PostCard({ post }) {
         <dl class="items-center mt-6 sm:flex">
           <div class="flex items-center">
             <span class="flex ml-3 space-x-1 space-x-reverse text-sm font-medium text-gray-600 ">
-              <h3 className="text-gray-500 dark:text-white mt-2">
+              <h3 className="text-gray-500 dark:text-white md:text-xs mt-2">
                 Published: {moment(datePublished).format("MMMM Do YYYY")}
               </h3>
             </span>
@@ -65,6 +70,6 @@ export default function PostCard({ post }) {
           </div>
         </dl>
       </div>
-    </a>
+    </div>
   );
 }
