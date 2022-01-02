@@ -3,7 +3,7 @@ export default function Footer() {
     <footer class="text-gray-500 flex justify-center items-center border-t border-gray-200">
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto dark:text-white">
-          <p>Copyright 2021 Web Dev Fanatic</p>
+          <p>Copyright 2022 Web Dev Blog</p>
           <div class="flex justify-center mt-8 space-x-6">
             <a
               href="https://twitter.com/Isaac77649241"

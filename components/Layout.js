@@ -12,7 +12,7 @@ export default function Layout({ children }) {
               <a>
                 <div className=" ">
                   <h1 className="text-3xl md:text-2xl lg:ml-6 xl:text-3xl  dark:text-white font-bold">
-                    Web Dev Fanatic
+                    Web Dev Blog
                   </h1>
                 </div>
               </a>
@@ -23,7 +23,7 @@ export default function Layout({ children }) {
           </div>
         </header>
 
-        <div className=" py-28 flex justify-center">{children}</div>
+        <div className="  flex justify-center">{children}</div>
         <Footer />
       </div>
     </div>

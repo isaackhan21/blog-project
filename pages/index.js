@@ -21,9 +21,9 @@ export async function getStaticProps() {
 export default function Home({ blogPosts }) {
   console.log(blogPosts);
   return (
-    <div className="">
-      <div className="  flex justify-center  xl:justify-start xl:ml-8">
-        <h1 className=" dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+    <div className="py-28">
+      <div className="  flex justify-center  xl:justify-start xl:ml-24 2xl:ml-8">
+        <h1 className=" dark:text-white text-2xl sm:text-3xl lg:text-3xl font-bold">
           All Posts
         </h1>
       </div>
