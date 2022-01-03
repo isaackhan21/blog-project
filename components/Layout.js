@@ -11,14 +11,14 @@ export default function Layout({ children }) {
             <div className="flex justify-center cursor-pointer mt-2 md:mt-0">
               <a>
                 <div className=" ">
-                  <h1 className="text-3xl md:text-2xl lg:ml-6 xl:text-3xl  dark:text-white font-bold">
+                  <h1 className="text-3xl md:text-3xl lg:ml-6   dark:text-white font-bold">
                     Web Dev Blog
                   </h1>
                 </div>
               </a>
             </div>
           </Link>
-          <div className="flex justify-center">
+          <div className=" flex justify-center">
             <NavBar />
           </div>
         </header>

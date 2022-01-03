@@ -27,7 +27,8 @@ export default function Home({ blogPosts }) {
           All Posts
         </h1>
       </div>
-      <div className=" overflow-auto mt-12 lg:grid lg:grid-cols-2 lg:justify-items-center   md:gap-2 2xl:grid-cols-3 2xl:gap-20  flex flex-col items-center ">
+
+      <div className="  mt-12 lg:grid lg:grid-cols-2 lg:justify-items-center   md:gap-2 2xl:grid-cols-3 2xl:gap-20  flex flex-col items-center ">
         {blogPosts.map((post) => (
           <PostCard key={post.sys.id} post={post} />
         ))}
