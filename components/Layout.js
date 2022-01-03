@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <div className="dark:bg-gray-900 ">
         <header className=" flex flex-col md:flex-row py-3  justify-between items-center border-b ">
           <Link href="/">
-            <div className="flex justify-center mt-2 md:mt-0">
+            <div className="flex justify-center cursor-pointer mt-2 md:mt-0">
               <a>
                 <div className=" ">
                   <h1 className="text-3xl md:text-2xl lg:ml-6 xl:text-3xl  dark:text-white font-bold">

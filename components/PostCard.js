@@ -3,7 +3,7 @@ import Image from "next/image";
 import moment from "moment";
 
 export default function PostCard({ post }) {
-  const { title, slug, datePublished, thumbnail } = post.fields;
+  const { title, slug, description, datePublished, thumbnail } = post.fields;
   return (
     <div
       class="mb-12 md:mb-24 lg:mb-14 2xl:mb-0 w-10/12 md:w-7/12 lg:w-10/12 xl:w-9/12  2xl:w-full   block overflow-hidden shadow-xl rounded-3xl"
@@ -22,8 +22,7 @@ export default function PostCard({ post }) {
         </h5>
 
         <p class="hidden mt-2 text-gray-500 dark:text-white sm:block">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-          commodi eligendi officiis laboriosam autem eveniet.
+          {description}
         </p>
 
         <dl class="items-center mt-6 sm:flex">

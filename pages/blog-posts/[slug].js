@@ -72,26 +72,7 @@ export default function PostDetails({ blogPost }) {
           </div>
 
           <div class=" dark:text-white prose prose-lg max-w-none">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-              laboriosam quia veritatis ullam, excepturi deserunt ex vero nemo
-              ipsam, est incidunt porro labore! Harum cupiditate suscipit
-              tempora! Aut est quod pariatur alias ab maiores iusto repellendus.
-              Maiores nihil totam delectus. Cumque eaque tempore dolor dolorem
-              natus velit officiis nisi. Doloremque.
-            </p>
-
-            <h2>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-              rerum?
-            </h2>
-
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              dignissimos quidem autem vitae! Distinctio voluptas veritatis
-              voluptatibus laborum suscipit beatae, sint atque tenetur
-              obcaecati, expedita ipsa sit veniam eos qui?
-            </p>
+            {documentToReactComponents(content)}
           </div>
         </div>
       </div>
